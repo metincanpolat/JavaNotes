@@ -1,0 +1,14 @@
+* Java'da parent class child class ları belirlemez, child istediği parent class ı seçer.
+
+* Bir çocuğun birden fazla parent i olamaz.
+
+* Ama grandparent ları olabilir. [A] -> [B] -> [C] C, B yi extend ettiği zaman aynı zamanda A yı da inherit etmiş olur
+
+* Child, Parent içerisindeki private nesnelere ulaşamaz, default nesnelere eğer aynı package içerisinde ise ulaşabilir.
+  public ve protected olanlara child her yerden ulaşabilir.
+  Aslında protected kullanımının en yaygın hali budur, paket haricinde sadece child olanlar kullanabilsin diye sınır belirlenebilir.
+
+* Görselde de gözüktüğü gibi, extend edilen classdaki değerleri veya mtodları direkt olarak kullanmak istiyorsak,
+  static olmaları gerekiyor. Eğer static değillerse child class ın içerisinde kendi objesi oluşturularak kullanılabilir.
+     public class childClass extends BaseClass{
+                    childClass obj= new childClass(); } gibi.

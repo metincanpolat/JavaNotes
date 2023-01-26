@@ -1,0 +1,10 @@
+* Encapsulation kullanarak erişim ve update (Okuma ve yazma) özelliklerini birbirinden ayrı olarak tanımlayabiliriz.
+  - Access Modifiers ile erişim engeli istediğimiz noktalarda müdahale edebiliriz. Ama bazen erişim ve update erişimi yetkisini birbirinden
+    ayırt etmek isteyebiliriz.
+      - yani birisi okusun (getter) ama değiştiremesin, birisi değiştirsin (setter) ama sonuçları göremesin gibiş ayırt edebiliriz.
+        -yada her ikisini de yapabilsin.
+
+  Mesela bir şirket düşünelim ve altındaki bölümlerden ikisi Satış ve Pazarlama bölümleri olsun. Ve hazırlanacak bir satış raporu var.
+    - Satış bölümü bu raporun girdilerini yapar; yapılan ürün satışlarını adetlerini girer. Ama toplam sonucu, edilen karı,.. gibi bilgilere
+        ulaşamaz. (Write-only)
+    - Pazarlama bölümü ise oradan girilen bilgiler sonucundaki tabloyu görür ama tabloda bir değişiklik yapamaz.(Read-only)

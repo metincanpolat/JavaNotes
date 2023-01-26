@@ -1,0 +1,9 @@
+Access Modifiers
+
+public : her yerden (diğer paketler,class) erişilebilir.
+
+default: sadece kendi paketinden erişileblir.
+
+protected: default gibi çalışır sadece extend yapılırsa başka paketten erişilebilir.
+
+private: sadece kendi içinde bulunduğu classdan erişilebilir.

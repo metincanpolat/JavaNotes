@@ -1,0 +1,22 @@
+
+
+Acces Modifiers (Erişim belirtiçleri, düzenleyicileri)
+public, private, protected, default(bir şey yazılmayan)
+
+Erişim Alanları
+1- Class içinden erişim
+2- Paketin içinden erişim
+3- Projenin içindne erişim
+
+public: Projenin her tarafından yani, diğer tüm paketlerden erişilebilir.
+        Class, metod , field
+
+default: (firendly) : bir belirteç yazılmazsa : Sadece bulunduğu pakettekiler erişebilir.
+        Class, metod, field
+
+private: Sadece class ın içindekiler erişebilir.
+         metod, field
+
+protected : default aynı çalışır. bir seçenekte diğer klasörlerden de erişilebilir.
+            default da olduğu gibi package içerisinden erişilebilir. inheritance yapılıp
+            extend edilen class lar package dışında olsa bile erişilebilir. extendin extend i de aynı şekilde.
