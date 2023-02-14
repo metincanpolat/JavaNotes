@@ -25,6 +25,8 @@ public class _01_TryCatchFinally {
             // işlemlerde gerye kalan yapılacaklar bu bölümde yapılır.
             // kullanım sebebi her iki durum sonrası geriye kalan yapılacaklar
             // birlikte olsun diyedir.
+            // Genellikle database'in zarar görmemesi için database bağlantısının kesilmesi gibi, mutlaka yapılması gereken islevler için kullanılır.
+
         }
         System.out.println("diğer çalışan kodlar");
         System.out.println("program sonu");

@@ -1,0 +1,24 @@
+1. Interface, bir sınıfın davranışlarını belirlemek için kullanılan abstract bir tür olarak tanımlanır.
+
+    Bir class ın temel planıdır(blue print). Sadece static sabit variable lar (constant==sabit) ve abstract metodlar içerir.
+
+2. Birden fazla class ın ortak özellikler taşımasını istiyorsak, bu özellikleri interface ler ile belirleyip, Object oluşturacağımız asıl class ların bu özellikleri kendilerine uyarlamalrını(override) isteriz.
+
+3. Interface içerisindeki variable lar mutlaka public, static, ve final olmalıdır.
+
+        public static final int SAYI=20; * bir değişken public static final ise büyük harf ile tanımlanır. Ide bunun daha iyi anlaşılabilmesi için italik yazar.
+        static final int SAYI=20;
+        final int SAYI=20;
+        int SAYI=20;
+
+        * Bunların hepsi aynı özelliktedir. Biz yazsak da yazmasak da değişkenlerin tamamı public static final dır.
+
+        Static oldukları için proje içerisinde rahatlıkla ulaşılabilir.
+        Final oldukları için mutlaka değer atanmalıdır.
+        Final oldukları için değiştirilemezler.
+
+        NOT: private veya protected variable lar compile time error verir.
+
+4. Interface in en önemli özelliği tüm metodların abstract olmasıdır.
+    Java 8 den sonra default ve static keyword leri kullanılarak body si olan metodlar oluşturulmasına izin verilmiştir.
+    Bu sayede Interface class ı implement eden class ların bu metodları override etme zorunluluğu kalkmış, isteyen implement edip isteyen etmeyebilir hale gelmiştir.

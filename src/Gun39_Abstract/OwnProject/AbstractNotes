@@ -1,0 +1,24 @@
+1. Abstract class, child class ları istediğimiz metodları kullanmaya mecbur kılmak, yada ortak özelliği olan class ları bir çatı altında toplamak için kıullanılır.
+
+Concrete(Somut) bir child class,parent ı olan abstract class lardaki tüm abstract metodları implement etmek zorundadır, diğer türlü CTE oluşur.
+
+Abstract bir child class, parent i olan abstract class lardaki metodları implement etmek zorunda değildir. Parent-child ilişkisi ile tüm metodlara ulaşabilir.
+
+2. Bir class ı veya metodu abstract yapmak için declarasyona abstract yazmak yeterlidir.
+Abstract olmayan metod/class lara concrete metod/class denir.
+Ama concrete metod/class ları özellikle belirtmeye gerek yoktur, abstract yazmıyorsa concrete dir.
+
+3. Abstract class lar constructor a sahiptir ancak, abstract class lardan object üretilmez (can not be instantiated).
+
+4. Bir metod abstract olarak belirlendiyse, mutlaka child class lar tarafından override edilmelidir, dolayısıyla abstract bir metodun body sine ihtiyaç yoktur.
+Abstract bir metoda body yazmaya çalışırsanız veya concrete bir metodu body siz yazmaya çalışırsanız Java CTE verir.
+
+5. Abstract bir class, abstract olmayan metod lara da sahip olabilir.
+Abstract içerisindeki concrete metodlar child lar tarafından override edilmek zorunda değildir (opsiyonel özelliktir.)
+
+6. Abstract olmayan bir class abstract metodlara sahip olamaz.
+
+7. Bir metod, abstract ve static keywordlere aynı anda sahip olamaz.
+Static yapmamızın amacı başka class lardan kullanmak ama abstract olan bir metod body siz olacağı için bir anlamı yok.
+
+8. Abstract metodlar override edilmek için kullanıldıklarından final olarak tanımlanamazlar.

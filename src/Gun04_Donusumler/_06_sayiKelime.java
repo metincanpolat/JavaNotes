@@ -30,6 +30,11 @@ public class _06_sayiKelime {
         String strHali=String.valueOf(22); // Bu komut ile de int string e dönüşebilir.
         System.out.println(strHali+2);
 
+        /* 3. YÖNTEM */
+
+        int f=2;
+        String strNew=f+""; // sonuna hiçlik ekleyerek String e çevirmiş olduk.
+
 
 
     }

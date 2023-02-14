@@ -9,7 +9,8 @@ public class _02_JavaRuntimeExeption {
 
 
         for (int i = 0; i < 3; i++) {
-            Scanner oku=new Scanner(System.in); // Scanner dışarıda olunca sonsuz döngüye giriyor. Tam anlamadım ama bu şekilde her döngüde Scanner tekrar oluştuğu için sorun olmuyor.
+            Scanner oku=new Scanner(System.in); // Scanner dışarıda olunca sonsuz döngüye giriyor.
+            // Tam anlamadım ama bu şekilde her döngüde Scanner tekrar oluştuğu için sorun olmuyor.
 
             try { // hata bölgesini try{} ine aldık
                 System.out.println("Sayi1=");
@@ -22,9 +23,10 @@ public class _02_JavaRuntimeExeption {
 
                 System.out.println("bölümü = "+(sayi1/sayi2));
                 }
-            catch (Exception hata) // hata mesajlarını hata(orjinalde "ex" kullanılır) isimli Exception cinsinden değişkene attım
+            catch (Exception ex) // hata mesajlarını hata(orjinalde "ex" kullanılır) isimli Exception cinsinden değişkene attım
             {
-                System.out.println("hata.getMessage() = " + hata.getMessage());
+                //ex.printStackTrace(); // bu şekilde de hata detayını alabiliriz kırmızı şekilde.
+                System.out.println("hata.getMessage() = " + ex.getMessage());
                 i--; // hata olduğu zaman sayacın artmamasını sağlıyor. sadece hata olunca buraya uğruyor çünkü.
             }
 
